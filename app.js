@@ -1,11 +1,17 @@
 // Vazifa:11.  Bahosi 5, 4, 3 bo’lgan o’quvchilarni ismlaridan iborat massiv qaytaruvchi getNamesByGrade(students, grade) funksiya tuzing. (map, filter)
 
-
 // 5 baho - (85 - 100)
 // 4 baho - (70 - 85)
 // 3 baho – (60 - 70)
-
-
+console.log(students)
+const students = [
+  { name: "Quincy", percent: 96 },
+  { name: "Jason", percent: 84 },
+  { name: "Alexis", percent: 100 },
+  { name: "Sam", percent: 65 },
+  { name: "Katie", percent: 90 },
+  { name: "Anna", percent: 75 },
+];
 
 
 function getNamesByGrade(students, grade) {
@@ -21,18 +27,14 @@ function getNamesByGrade(students, grade) {
     return { ...student, grade: studentGrade };
   });
 
-  
   return studentsWithGrades
     .filter((student) => student.grade === grade)
     .map((student) => student.name);
 }
 
-
 // --------------------------------------------------------------------------------------------------------------
 
-
 // Vazifa; 2.  Massivdagi bir xil so’zlar sonini hosil qiluvchi obyekt yarating. (reduce)
-
 
 // Input: const animals = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
 // Output: {
@@ -42,7 +44,6 @@ function getNamesByGrade(students, grade) {
 //     rabbit: 1
 //  }
 
-
 // const animals = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
 // const countAnimals = animals.reduce((acc, animal) => {
 //   acc[animal] = (acc[animal] || 0) + 1;
@@ -51,16 +52,12 @@ function getNamesByGrade(students, grade) {
 
 // console.log(countAnimals);
 
-
 // ---------------------------------------------------------------------------------------------------------------------------
-
 
 // Vazifa3:3.  Massiv elementlari kvadratlaridan hosil bo’lgan massiv hosil qiling. (map)
 
-
 // Input: [1, 2, 3, 4, 5]
 // Output: [1, 4, 9, 16, 25]
-
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -70,16 +67,12 @@ function getNamesByGrade(students, grade) {
 
 // console.log(squares); // [1, 4, 9, 16, 25]
 
-
 // ---------------------------------------------------------------------------------------------------------------------------------
-
 
 // Vazifa4;Massivdagi musbat sonlar yig’indisini hisoblang. (filter va reduce)
 
-
 // Input: [ 1, -4, 12, 0, -3, 29, -150]
 // Output: 42
-
 
 // const numbers = [1, -4, 12, 0, -3, 29, -150];
 
@@ -89,35 +82,22 @@ function getNamesByGrade(students, grade) {
 
 // console.log(positiveSum); // 42
 
-
 // --------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
 // // Vazifa:5.  Satrdagi so’zlarning bosh harflarini oling. (split, map, join)
-
 
 // Input: 'George Raymond Richard Martin'
 // Output: 'GRRM'
 
-
-
-
 // const fullName = 'George Raymond Richard Martin';
 
-// const initials = fullName.split(' ')   
-//   .map(word => word[0].toUpperCase())  
-//   .join('');                         
+// const initials = fullName.split(' ')
+//   .map(word => word[0].toUpperCase())
+//   .join('');
 
-// console.log(initials);  
-
-
-
-
+// console.log(initials);
 
 // Vazifa:66.  Massivdagi eng yosh va eng qarilarni topib, ularni yoshlarini farqini toping. (sort).
-
 
 // Input: [
 // {name: 'John', age: 13},
@@ -127,8 +107,6 @@ function getNamesByGrade(students, grade) {
 // {name: 'Jeniffer', age: 65}
 // ];
 // Output: 54
-
-
 
 // const people = [
 //   { name: 'John', age: 13 },
@@ -144,15 +122,10 @@ function getNamesByGrade(students, grade) {
 
 // console.log(ageDifference); // 54
 
-
 // -----------------------------------------------------------------------------------------------------------------------
-
-
 
 // Vazifa: 7.  N ta elementdan iborat massiv berilgan.
 // Massiv elementlari orasidan juftlarini va toqlarini o'z ichiga oladigan massivlar hosil qilinsin. (filter)
-
-
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -162,12 +135,9 @@ function getNamesByGrade(students, grade) {
 // console.log("Juftlar:", evenNumbers); // [2, 4, 6, 8, 10]
 // console.log("Toqlar:", oddNumbers);  // [1, 3, 5, 7, 9]
 
-
 // -----------------------------------------------------------------------------------------------------------------------------
 
-
 // Vazifa8:  N ta elementdan iborat massiv berilgan. Massiv elementlari orasidan bir xil qiymatga ega bo’lganlarini o’chiruvchi dastur tuzilsin. Faqat birinchi uchragani qoldirilsin. (reduce)
-
 
 // const arr = [1, 2, 3, 2, 4, 1, 5, 3];
 
@@ -180,18 +150,8 @@ function getNamesByGrade(students, grade) {
 
 // console.log(uniqueArr); // [1, 2, 3, 4, 5]
 
-
 // -----------------------------------------------------------------------------------------------------------------------------------
-
 
 // Vazifa9: Products massivini id, name, price, rating va discount bo'yicha sortlash; (sort)
 
-
 // Vazifa10:
-
-
-
-
-
-
-
